@@ -1,5 +1,10 @@
 #!/bin/bash
 
-echo "TBC"
-#scripting/compile.sh ../tebex.sp
-#mv scripting/tebex.smx bin/plugins/
+cd "${0%/*}"
+rm -f binaries/*.so
+rm -f binaries/*.dll
+make clean
+make
+mv *.so binaries/
+mv *.dll binaries/
+
