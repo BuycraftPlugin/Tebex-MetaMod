@@ -1,3 +1,3 @@
 .idea
-scripting/compiled
-bin/*
+cmake-build-debug
+CMakeLists.txt
